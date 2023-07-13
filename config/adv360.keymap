@@ -76,7 +76,7 @@
    layer_fn { bindings = <
  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                                                             &tog 1               &mo 3   &kp F7           &kp F8           &kp F9          &kp F10  &kp F11  &kp F12
  &trans &sk LC(LA(LG(LS(Q)))) &sk LC(LA(LG(LS(W))))  &sk LC(LA(LG(LS(E))))  &sk LC(LA(LG(LS(R)))) &sk LC(LA(LG(LS(T))))     &none                &none   &trans    &trans  &trans          &trans   &trans   &trans
- &trans &sk LC(LA(LG(LS(A)))) &sk LC(LA(LG(LS(S))))  &sk LC(LA(LG(LS(D))))  &sk LC(LA(LG(LS(F)))) &sk LC(LA(LG(LS(G))))     &none                &trans  &trans    &trans  &trans          &none  &kp LEFT_ARROW   &kp DOWN_ARROW       &kp UP_ARROW  &kp RIGHT_ARROW   &sk LC(LA(LG(LS(W))))   td_mac
+ &trans &sk LC(LA(LG(LS(A)))) &sk LC(LA(LG(LS(S))))  &sk LC(LA(LG(LS(D))))  &sk LC(LA(LG(LS(F)))) &sk LC(LA(LG(LS(G))))     &none                &trans  &trans    &trans  &trans          &none  &kp LEFT_ARROW   &kp DOWN_ARROW       &kp UP_ARROW  &kp RIGHT_ARROW   &sk LC(LA(LG(LS(SEMI))))   &td_mac
  &trans &sk LC(LA(LG(LS(Z)))) &sk LC(LA(LG(LS(X))))  &sk LC(LA(LG(LS(C))))  &sk LC(LA(LG(LS(V)))) &sk LC(LA(LG(LS(B))))     &none                &none   &trans    &none   &none  &trans   &none             &none          &trans           &trans             &trans           &trans   &trans   &trans
  &trans  &trans  &trans  &trans  &trans                                                           &macro_option_bksp  &macro_option_delete       &trans  &trans    &trans  &macro_spotlight &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &trans   &trans   &trans
             >;
