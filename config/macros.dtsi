@@ -10,7 +10,8 @@ ctrl_kp: macro_ctrl_kp {
     compatible = "zmk,behavior-macro-one-param";
     bindings
         = <&macro_press &kp LCTL>
-        , <&macro_param_1to1>, <&macro_tap &kp 0>
+        , <&macro_param_1to1>
+        , <&macro_tap &kp 0>
         , <&macro_release &kp LCTL>;
 };
 
