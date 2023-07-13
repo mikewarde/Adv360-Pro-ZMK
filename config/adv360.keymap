@@ -125,34 +125,34 @@
         layer_fn { 
             bindings = <
                 // row 1 - left (7 keys)
-                &kp F1  &kp F2                  &kp F3                  &kp F4                  &kp F5                  &kp F6                  &tog 1
+                &kp F1  &kp F2      &kp F3         &kp F4           &kp F5          &kp F6          &tog 1
 
                 // row 1 - right (7 keys)
-                &mo 3   &kp F7                  &kp F8                  &kp F9                  &kp F10                 &kp F11                 &kp F12
+                &mo 3   &kp F7      &kp F8         &kp F9           &kp F10         &kp F11         &kp F12
 
                 // row 2 - left (7 keys)
-                &trans  &kp HYP(Q)   &sk LC(LA(LG(LS(W))))   &sk LC(LA(LG(LS(E))))   &sk LC(LA(LG(LS(R))))   &sk LC(LA(LG(LS(T))))   &none
+                &trans  &kp HYP(Q)  &kp HYP(W)     &kp HYP(E)       &kp HYP(R)      &kp HYP(T)      &none
 
                 // row 2 - right (7 keys)
-                &none   &trans                  &trans                  &trans                  &sk LS(INS)             &trans                  &trans        
+                &none   &trans      &trans         &trans           &sk LS(INS)     &trans          &trans        
 
                 // row 3 - left (9 keys)
-                &trans  &sk LC(LA(LG(LS(A))))   &sk LC(LA(LG(LS(S))))   &sk LC(LA(LG(LS(D))))   &sk LC(LA(LG(LS(F))))   &sk LC(LA(LG(LS(G))))   &none       &trans                      &trans
+                &trans  &kp HYP(A)  &kp HYP(S)     &kp HYP(D)       &kp HYP(F)      &kp HYP(G)      &none           &trans          &trans
 
                 // row 3 - right (9 keys)
-                &trans  &trans                  &none                   &kp LEFT                &kp DOWN                &kp UP                  &kp RIGHT   &sk LC(LA(LG(LS(SEMI))))    &td_mac
+                &trans  &trans      &none          &kp LEFT         &kp DOWN        &kp UP          &kp RIGHT       &kp HYP(SEMI)   &td_mac
 
                 // row 4 - left (7 keys)
-                &trans &sk LC(LA(LG(LS(Z))))    &sk LC(LA(LG(LS(X))))   &sk LC(LA(LG(LS(C))))   &sk LC(LA(LG(LS(V))))   &sk LC(LA(LG(LS(B))))   &none  
+                &trans &kp HYP(Z)   &kp HYP(X)     &kp HYP(C)       &kp HYP(V)      &kp HYP(B)      &none  
 
                 // row 4 - right (7 keys)
-                &none   &trans                  &trans                  &trans                  &trans                  &trans                  &trans
+                &none   &trans      &trans         &trans           &trans          &trans          &trans
 
                 // row 5 - left (8 keys)
-                &trans  &trans              &trans                  &trans                  &trans                  &sk LA(BSPC)            &sk LA(DEL)     &trans
+                &trans  &trans      &trans         &trans           &trans          &sk LA(BSPC)    &sk LA(DEL)     &trans
 
                 // row 5 - right (8 keys)
-                &trans  &trans                  &sk LG(SPACE)           &kp C_VOLUME_DOWN       &kp C_VOLUME_UP         &trans                  &trans          &trans   
+                &trans  &trans      &sk LG(SPACE)  &kp C_VOL_DN     &kp C_VOL_UP    &trans          &trans          &trans   
             >;
         };
 
