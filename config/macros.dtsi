@@ -5,18 +5,18 @@
 // bindings = <&sk LEFT_ALT>, <&kp DELETE>;
 // };
 
-#include <dt-bindings/zmk/macro.h>
+// #include <dt-bindings/zmk/macro.h>
 
-ctrl_kp: macro_ctrl_kp {
-    #binding-cells = <1>;
-    label = "MACRO_CTRL_KP";
-    compatible = "zmk,behavior-macro-one-param";
-    bindings
-        = <&macro_press &kp LCTL>
-        , <&macro_param_1to1>
-        , <&macro_tap &kp MACRO_PLACEHOLDER>
-        , <&macro_release &kp LCTL>;
-};
+// ctrl_kp: macro_ctrl_kp {
+//     #binding-cells = <1>;
+//     label = "MACRO_CTRL_KP";
+//     compatible = "zmk,behavior-macro-one-param";
+//     bindings
+//         = <&macro_press &kp LCTL>
+//         , <&macro_param_1to1>
+//         , <&macro_tap &kp MACRO_PLACEHOLDER>
+//         , <&macro_release &kp LCTL>;
+// };
 
 
 macro_hyperkey: macro_hyperkey{

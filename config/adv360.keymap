@@ -146,7 +146,7 @@
                 &none   &trans                  &trans                  &trans                  &trans                  &trans                  &trans
 
                 // row 5 - left (8 keys)
-                &trans  &ctrl_kp A              &trans                  &trans                  &trans                  &sk LA(BSPC)            &sk LA(DEL)     &trans
+                &trans  &trans              &trans                  &trans                  &trans                  &sk LA(BSPC)            &sk LA(DEL)     &trans
 
                 // row 5 - right (8 keys)
                 &trans  &trans                  &sk LG(SPACE)           &kp C_VOLUME_DOWN       &kp C_VOLUME_UP         &trans                  &trans          &trans   
