@@ -23,8 +23,9 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+            key-positions = <38 39>;
+            layers = <0>;
+            bindings = <&sk LS(INS)>;
         };
     };
 
