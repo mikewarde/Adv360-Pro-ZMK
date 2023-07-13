@@ -10,6 +10,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
+ 
+#define HYP(x) LC(LS(LG(LA(x))))
+
 
 / {
 
@@ -128,7 +131,7 @@
                 &mo 3   &kp F7                  &kp F8                  &kp F9                  &kp F10                 &kp F11                 &kp F12
 
                 // row 2 - left (7 keys)
-                &trans  &sk LC(LA(LG(LS(Q))))   &sk LC(LA(LG(LS(W))))   &sk LC(LA(LG(LS(E))))   &sk LC(LA(LG(LS(R))))   &sk LC(LA(LG(LS(T))))   &none
+                &trans  &kp HYP(Q)   &sk LC(LA(LG(LS(W))))   &sk LC(LA(LG(LS(E))))   &sk LC(LA(LG(LS(R))))   &sk LC(LA(LG(LS(T))))   &none
 
                 // row 2 - right (7 keys)
                 &none   &trans                  &trans                  &trans                  &sk LS(INS)             &trans                  &trans        
