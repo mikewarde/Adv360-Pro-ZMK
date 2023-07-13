@@ -1,36 +1,276 @@
-  macro_quotes: macro_quotes {
-    compatible = "zmk,behavior-macro";
-    label = "macro_quotes";
-    #binding-cells = <0>;
-    bindings = <&kp SQT>, <&kp SQT>, <&kp LEFT>;
-  };
-  macro_dquotes: macro_dquotes {
-    compatible = "zmk,behavior-macro";
-    label = "macro_dquotes";
-    #binding-cells = <0>;
-    bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
-  };
-  macro_braces: macro_braces {
-    compatible = "zmk,behavior-macro";
-    label = "macro_braces";
-    #binding-cells = <0>;
-    bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
-  };
-  macro_parens: macro_parens {
-    compatible = "zmk,behavior-macro";
-    label = "macro_parens";
-    #binding-cells = <0>;
-    bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
-  };
-  macro_brackets: macro_brackets {
-    compatible = "zmk,behavior-macro";
-    label = "macro_brackets";
-    #binding-cells = <0>;
-    bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
-  };
-  macro_kinesis: macro_kinesis {
-    compatible = "zmk,behavior-macro";
-    label = "macro_kinesis";
-    #binding-cells = <0>;
-    bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
-  };
+macro_option_delete: macro_option_delete{
+compatible = "zmk,behavior-macro";
+label = "macro_option_delete";
+#binding-cells = <0>;
+bindings = <&sk LEFT_ALT>, <&kp DELETE>;
+};
+macro_option_bksp: macro_option_bksp{
+compatible = "zmk,behavior-macro";
+label = "macro_option_bksp";
+#binding-cells = <0>;
+bindings = <&sk LEFT_ALT>, <&kp BACKSPACE>;
+};
+macro_spotlight: macro_spotlight{
+compatible = "zmk,behavior-macro";
+label = "macro_spotlight";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&kp SPACE>;
+};
+macro_hyperkey: macro_hyperkey{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>;
+};
+macro_quotes: macro_quotes{
+compatible = "zmk,behavior-macro";
+label = "macro_quotes";
+#binding-cells = <0>;
+bindings = <&kp SQT>, <&kp SQT>, <&kp LEFT>;
+};
+macro_dquotes: macro_dquotes{
+compatible = "zmk,behavior-macro";
+label = "macro_dquotes";
+#binding-cells = <0>;
+bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
+};
+macro_braces: macro_braces{
+compatible = "zmk,behavior-macro";
+label = "macro_braces";
+#binding-cells = <0>;
+bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
+};
+macro_parens: macro_parens{
+compatible = "zmk,behavior-macro";
+label = "macro_parens";
+#binding-cells = <0>;
+bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
+};
+macro_brackets: macro_brackets{
+compatible = "zmk,behavior-macro";
+label = "macro_brackets";
+#binding-cells = <0>;
+bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
+};
+macro_kinesis: macro_kinesis{
+compatible = "zmk,behavior-macro";
+label = "macro_kinesis";
+#binding-cells = <0>;
+bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
+};
+macro_hyperkey_0: macro_hyperkey_0{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_0";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp 0>;
+};
+macro_hyperkey_1: macro_hyperkey_1{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_1";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp 1>;
+};
+macro_hyperkey_2: macro_hyperkey_2{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_2";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp 2>;
+};
+macro_hyperkey_3: macro_hyperkey_3{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_3";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp 3>;
+};
+macro_hyperkey_4: macro_hyperkey_4{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_4";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp 4>;
+};
+macro_hyperkey_5: macro_hyperkey_5{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_5";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp 5>;
+};
+macro_hyperkey_6: macro_hyperkey_6{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_6";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp 6>;
+};
+macro_hyperkey_7: macro_hyperkey_7{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_7";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp 7>;
+};
+macro_hyperkey_8: macro_hyperkey_8{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_8";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp 8>;
+};
+macro_hyperkey_9: macro_hyperkey_9{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_9";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp 9>;
+};
+macro_hyperkey_A: macro_hyperkey_A{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_A";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp A>;
+};
+macro_hyperkey_B: macro_hyperkey_B{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_B";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp B>;
+};
+macro_hyperkey_C: macro_hyperkey_C{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_C";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp C>;
+};
+macro_hyperkey_D: macro_hyperkey_D{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_D";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp D>;
+};
+macro_hyperkey_E: macro_hyperkey_E{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_E";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp E>;
+};
+macro_hyperkey_F: macro_hyperkey_F{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_F";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp F>;
+};
+macro_hyperkey_G: macro_hyperkey_G{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_G";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp G>;
+};
+macro_hyperkey_H: macro_hyperkey_H{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_H";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp H>;
+};
+macro_hyperkey_I: macro_hyperkey_I{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_I";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp I>;
+};
+macro_hyperkey_J: macro_hyperkey_J{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_J";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp J>;
+};
+macro_hyperkey_K: macro_hyperkey_K{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_K";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp K>;
+};
+macro_hyperkey_L: macro_hyperkey_L{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_L";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp L>;
+};
+macro_hyperkey_M: macro_hyperkey_M{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_M";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp M>;
+};
+macro_hyperkey_N: macro_hyperkey_N{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_N";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp N>;
+};
+macro_hyperkey_O: macro_hyperkey_O{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_O";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp O>;
+};
+macro_hyperkey_P: macro_hyperkey_P{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_P";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp P>;
+};
+macro_hyperkey_Q: macro_hyperkey_Q{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_Q";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp Q>;
+};
+macro_hyperkey_R: macro_hyperkey_R{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_R";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp R>;
+};
+macro_hyperkey_S: macro_hyperkey_S{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_S";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp S>;
+};
+macro_hyperkey_T: macro_hyperkey_T{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_T";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp T>;
+};
+macro_hyperkey_U: macro_hyperkey_U{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_U";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp U>;
+};
+macro_hyperkey_V: macro_hyperkey_V{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_V";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp V>;
+};
+macro_hyperkey_W: macro_hyperkey_W{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_W";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp W>;
+};
+macro_hyperkey_X: macro_hyperkey_X{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_X";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp X>;
+};
+macro_hyperkey_Y: macro_hyperkey_Y{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_Y";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp Y>;
+};
+macro_hyperkey_Z: macro_hyperkey_Z{
+compatible = "zmk,behavior-macro";
+label = "macro_hyperkey_Z";
+#binding-cells = <0>;
+bindings = <&sk LEFT_COMMAND>, <&sk LEFT_ALT>, <&sk LEFT_SHIFT>, <&sk LEFT_CONTROL>, <&kp Z>;
+};
