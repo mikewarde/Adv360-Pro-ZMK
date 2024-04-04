@@ -159,7 +159,7 @@
                 &trans &kp HYP(Z)   &kp HYP(X)     &kp HYP(C)       &kp HYP(V)      &kp HYP(B)      &none  
 
                 // row 4 - right (7 keys)
-                &none   &trans      &kp K_APPLICATION &trans           &trans          &trans          &trans
+                &none   &trans      &trans &trans           &trans          &trans          &trans
 
                 // row 5 - left (8 keys)
                 &trans  &trans      &trans         &trans           &trans          &kp LA(BSPC)    &kp LA(DEL)     &trans
