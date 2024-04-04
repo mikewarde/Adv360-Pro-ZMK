@@ -48,11 +48,24 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+          
+
+        td_gqt: tap_dance_to_q_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_TO_GQT_MACRO";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&gqt>, <&kp> ;
+        };
+
+
 
     };
 
     keymap {
         compatible = "zmk,keymap";
+        // Default layer which will be used in macos 
+
         default_layer {
             bindings = <
                 // row 1 - left (7 keys)
@@ -80,7 +93,7 @@
                 &kp PG_UP  &kp N        &kp M       &kp COMMA           &kp DOT     &kp FSLH    &kp RSHFT
                 
                 // row 5 - left (8 keys)
-                &mo 2      &kp GRAVE                &caps_word          &kp LEFT    &kp RIGHT   &kp BSPC   &kp DEL     &kp END
+                &mo 2      &kp GRAVE                &caps_word          &kp LEFT    &kp RIGHT   &gqt LCTRL BSPC   &gqt LALT DEL     &kp END
                 
                 // row 5 - right (8 keys)
                 &kp PG_DN  &gqt RALT ENTER          &gqt RCTRL SPACE    &kp DOWN    &kp UP      &kp LBKT        &kp RBKT    &mo 2
@@ -146,7 +159,7 @@
                 &trans &kp HYP(Z)   &kp HYP(X)     &kp HYP(C)       &kp HYP(V)      &kp HYP(B)      &none  
 
                 // row 4 - right (7 keys)
-                &none   &trans      &trans         &trans           &trans          &trans          &trans
+                &none   &trans      &kp K_APPLICATION &trans           &trans          &trans          &trans
 
                 // row 5 - left (8 keys)
                 &trans  &trans      &trans         &trans           &trans          &kp LA(BSPC)    &kp LA(DEL)     &trans
