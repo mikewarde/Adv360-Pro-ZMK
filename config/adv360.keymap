@@ -21,7 +21,6 @@
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick_tap_ms = <150>;
@@ -32,7 +31,6 @@
         
         td_mac: tap_dance_macro {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MACRO";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&macro_quotes>, <&macro_dquotes> ;
@@ -40,7 +38,6 @@
 
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
@@ -52,7 +49,6 @@
 
         td_gqt: tap_dance_to_q_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_TO_GQT_MACRO";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&gqt>, <&kp> ;
