@@ -45,16 +45,6 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-          
-
-        td_gqt: tap_dance_to_q_tap {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&gqt>, <&kp> ;
-        };
-
-
 
     };
 
